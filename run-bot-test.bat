@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -cp lib/Ab.jar Main bot=test action=chat trace=false

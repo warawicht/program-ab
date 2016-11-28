@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<category>
+		<pattern>หวัดดี</pattern>
+		<template>ดี</template>
+	</category>
+	<category>
+		<pattern>พี่วีไม่มา</pattern>
+		<template>สบายเลย</template>
+	</category>
+	<category>
+		<pattern>I LIKE *</pattern>
+		<template>I too like <star />.</template>
+	</category>
+	<category>
+		<pattern>A * IS A *</pattern>
+		<template>How <star index="1" /> can not be a <star index="2" />?</template>
+	</category>
+	<category>
+		<pattern>SAY HELLO IN *</pattern>
+		<template>
+			<think>
+				<set name="language">
+					<uppercase>
+						<star/>
+					</uppercase>
+				</set>
+			</think>
+			<condition name="language">
+				<li value="ARABIC">مرحبا باللغة العربية</li>
+				<li value="CHINESE">你好中國</li>
+				<li value="ENGLISH">Hello in English.</li>
+				<li value="FRENCH">Bonjour en français.</li>
+				<li value="GERMAN">Hallo in Deutsch.</li>
+				<li value="GREEK">Γεια σας στην ελληνική γλώσσα.</li>
+				<li value="PORTUGUESE">Olá em Português.</li>
+				<li value="RUSSIAN">Здравствуйте на русском языке.</li>
+				<li value="SPANISH">Hola en español.</li>
+				<li value="THAI">สวัสดีในภาษาไทย</li>
+				<li value="TURKISH">InTurkish Merhaba.</li>
+				<li>That's not a language I know. Sorry.</li>
+			</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>مرحبا</pattern>
+		<template>مرحبا باللغة العربية</template>
+	</category>
+	<category>
+		<pattern>你好</pattern>
+		<template>你好中國</template>
+	</category>
+	<category>
+		<pattern>HELLO</pattern>
+		<template>Hello in English.</template>
+	</category>
+	<category>
+		<pattern>BONJOUR</pattern>
+		<template>Bonjour en français.</template>
+	</category>
+	<category>
+		<pattern>HALLO</pattern>
+		<template>Hallo in Deutsch.</template>
+	</category>
+	<category>
+		<pattern>ΓΕΙΑ ΣΑΣ</pattern>
+		<template>Γεια σας στην ελληνική γλώσσα.</template>
+	</category>
+	<category>
+		<pattern>OLÁ</pattern>
+		<template>Olá em Português.</template>
+	</category>
+	<category>
+		<pattern>ПРИВЕТ</pattern>
+		<template>Здравствуйте на русском языке.</template>
+	</category>
+	<category>
+		<pattern>HOLA</pattern>
+		<template>Hola en español.</template>
+	</category>
+	<category>
+		<pattern>สวัสดี</pattern>
+		<template>สวัสดีในภาษาไทย</template>
+	</category>
+	<category>
+		<pattern>MERHABA</pattern>
+		<template>InTurkish Merhaba.</template>
+	</category>
+</aiml>
